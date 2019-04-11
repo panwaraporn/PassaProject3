@@ -18,9 +18,9 @@ public class Devil : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            gm.InputText.text = ("เจ้าไม่เก่งเลย เอาเปรียบแต่ผู้อื่น เจ้ามันเห็นแก่ตัว");
-            gm.InputTextYes.text = ("[Y] เจ้าไม่เก่งเลย");
-            gm.InputTextNo.text = ("[N] เจ้ามันเห็นแก่ตัว");
+            gm.InputText.text = ("เจ้าไม่เก่งเลย");
+            gm.InputTextYes.text = ("[Y] เฉย");
+            gm.InputTextNo.text = ("[N] โต้ตอบ");
             if (Input.GetKeyDown("y"))
             {
                 player.Damage(2);
