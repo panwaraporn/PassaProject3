@@ -18,7 +18,7 @@ public class Box : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            gm.InputText.text = ("จักขุสัมผัส หมายถึง การรับรู้ทางตา");
+            gm.InputText.text = ("จักขุสัมผัส หมายถึง การกระทบทางตา");
         }
     }
 
@@ -26,7 +26,7 @@ public class Box : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            gm.InputText.text = ("จักขุสัมผัส หมายถึง การรับรู้ทางตา");
+            gm.InputText.text = ("จักขุสัมผัส หมายถึง การกระทบทางตา");
         }
     }
 
