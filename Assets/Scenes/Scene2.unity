@@ -1805,7 +1805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   smoothTimeY: 0.05
   smoothTimeX: 0.05
-  player: {fileID: 1502290072}
+  player: {fileID: 0}
   bounds: 0
   minCameraPos: {x: 0, y: 0, z: 0}
   maxCameraPos: {x: 0, y: 0, z: 0}
@@ -4792,10 +4792,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1502290077}
   - component: {fileID: 1502290076}
-  - component: {fileID: 1502290075}
   - component: {fileID: 1502290074}
   - component: {fileID: 1502290073}
   - component: {fileID: 1502290078}
+  - component: {fileID: 1502290075}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
