@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Devil : MonoBehaviour
+public class Devil2 : MonoBehaviour
 {
     private GameMaster gm;
     private PlayerController player;
@@ -18,12 +18,12 @@ public class Devil : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            gm.InputText.text = ("เจ้าไม่เก่งเลย");
+            gm.InputText.text = ("เจ้าคนไม่มีเพื่อน มาเดินคนเดียว");
             gm.InputTextYes.text = ("[Y] เฉย");
             gm.InputTextNo.text = ("[N] โต้ตอบ");
             if (Input.GetKeyDown("y"))
             {
-                player.Damage(2);
+                player.Damage(0);
             }
             else if (Input.GetKeyDown("n"))
             {
@@ -38,7 +38,7 @@ public class Devil : MonoBehaviour
         {
             if (Input.GetKeyDown("y"))
             {
-                player.Damage(0);
+                player.Damage(2);
             }
             else if (Input.GetKeyDown("n"))
             {
