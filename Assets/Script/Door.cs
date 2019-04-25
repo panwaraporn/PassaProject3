@@ -21,6 +21,7 @@ public class Door : MonoBehaviour
             gm.InputText.text = ("กด E เพื่อเข้าประตู");
             if (Input.GetKeyDown("e"))
             {
+                SaveScore();
                 //Application.LoadLevel(ซีนที่จะไป)
                 Application.LoadLevel(3);
             }
@@ -33,6 +34,7 @@ public class Door : MonoBehaviour
         {
             if(Input.GetKeyDown("e"))
             {
+                SaveScore();
                 //Application.LoadLevel(ซีนที่จะไป)
                 Application.LoadLevel(3);
             }
@@ -45,5 +47,10 @@ public class Door : MonoBehaviour
         {
             gm.InputText.text = (" ");
         }
+    }
+
+    void SaveScore()
+    {
+        PlayerPrefs.SetInt("Score", gm.score);
     }
 }

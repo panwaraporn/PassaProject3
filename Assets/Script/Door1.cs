@@ -46,4 +46,9 @@ public class Door1 : MonoBehaviour
             gm.InputText.text = (" ");
         }
     }
+
+    void SaveScore()
+    {
+        PlayerPrefs.SetInt("Score", gm.score);
+    }
 }

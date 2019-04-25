@@ -3145,6 +3145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 0
+  score: 0
   pointsText: {fileID: 217796392}
   InputText: {fileID: 2011563939}
   InputTextYes: {fileID: 0}
