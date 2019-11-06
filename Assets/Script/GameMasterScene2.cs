@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameMaster : MonoBehaviour
+public class GameMasterScene2 : MonoBehaviour
 {
     public int points;
 
@@ -18,20 +18,20 @@ public class GameMaster : MonoBehaviour
     {
         if (PlayerPrefs.HasKey("Score"))
         {
-            if(Application.loadedLevel == 0)
+            if (Application.loadedLevel == 0)
             {
                 PlayerPrefs.DeleteKey("Score");
-                score = 0;
+               /* score = 0;*/
             }
             else
             {
-                    score = PlayerPrefs.GetInt("Score");
+                score = PlayerPrefs.GetInt("Score");
             }
         }
     }
 
     void Update()
     {
-        pointsText.text = ("คะแนน: " +points.ToString());  
+        pointsText.text = ("คะแนน: " + points.ToString());
     }
 }
