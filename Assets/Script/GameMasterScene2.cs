@@ -21,7 +21,7 @@ public class GameMasterScene2 : MonoBehaviour
             if (Application.loadedLevel == 0)
             {
                 PlayerPrefs.DeleteKey("Score");
-               /* score = 0;*/
+                score = 0;
             }
             else
             {
