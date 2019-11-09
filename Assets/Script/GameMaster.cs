@@ -6,10 +6,9 @@ using UnityEngine.UI;
 public class GameMaster : MonoBehaviour
 {
     public int points;
-
     public int score;
 
-    public Text pointsText;
+    public Text scoreText;
     public Text InputText;
     public Text InputTextYes;
     public Text InputTextNo;
@@ -29,9 +28,11 @@ public class GameMaster : MonoBehaviour
             }
         }
     }
-
+     
     void Update()
     {
-        pointsText.text = ("คะแนน: " +points.ToString());  
+        scoreText.text = ("Score : " + score.ToString());
+        
     }
+
 }

@@ -44,6 +44,7 @@ public class Door2 : MonoBehaviour
         if (col.CompareTag("Player"))
         {
             gm.InputText.text = (" ");
+            gm.score -= 1; 
         }
     }
 }

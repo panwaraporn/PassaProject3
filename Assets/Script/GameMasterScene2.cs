@@ -8,7 +8,6 @@ public class GameMasterScene2 : MonoBehaviour
     public int points;
 
     public int score;
-
     public Text pointsText;
     public Text InputText;
     public Text InputTextYes;

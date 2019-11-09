@@ -50,5 +50,6 @@ public class Door1 : MonoBehaviour
     void SaveScore()
     {
         PlayerPrefs.SetInt("Score", gm.score);
+        gm.score -= 1;
     }
 }

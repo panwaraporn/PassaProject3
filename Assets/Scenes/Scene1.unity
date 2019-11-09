@@ -1193,7 +1193,7 @@ GameObject:
   - component: {fileID: 217796393}
   - component: {fileID: 217796392}
   m_Layer: 5
-  m_Name: PointText
+  m_Name: ScoretText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1231,7 +1231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.8929987, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1241,7 +1241,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2cc1079f4bd70924c82def0d91c59c7d, type: 3}
     m_FontSize: 90
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 90
@@ -1251,7 +1251,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: "\u0E04\u0E30\u0E41\u0E19\u0E19 : 0"
 --- !u!222 &217796393
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3146,7 +3146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 0
   score: 0
-  pointsText: {fileID: 217796392}
+  scoreText: {fileID: 217796392}
   InputText: {fileID: 2011563939}
   InputTextYes: {fileID: 0}
   InputTextNo: {fileID: 0}

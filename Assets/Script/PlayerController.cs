@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
         curHealth = maxHealth;
 
         gm = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
+
     }
 
     [System.Obsolete]
@@ -120,17 +121,22 @@ public class PlayerController : MonoBehaviour
         if(col.CompareTag("Coin"))
         {
             Destroy(col.gameObject);
-            gm.points += 1;
+            gm.score += 1;
         }
 
         if(col.CompareTag("InputTextYes"))
         {
-            gm.points += 1;
+            gm.score += 1;
         }
 
         if (col.CompareTag("InputTextNo"))
         {
-            gm.points -= 1;
+            gm.score -= 1;
         }
+    }
+
+    private void resetScore()
+    {
+        PlayerPrefs.SetInt("Score", 0);
     }
 }

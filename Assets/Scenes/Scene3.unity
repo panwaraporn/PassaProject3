@@ -3520,7 +3520,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 0
   score: 0
-  pointsText: {fileID: 1889756718}
+  scoreText: {fileID: 1889756718}
   InputText: {fileID: 1721947919}
   InputTextYes: {fileID: 513346960}
   InputTextNo: {fileID: 611452676}
@@ -8017,7 +8017,7 @@ GameObject:
   - component: {fileID: 1889756717}
   - component: {fileID: 1889756718}
   m_Layer: 5
-  m_Name: PointText
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
