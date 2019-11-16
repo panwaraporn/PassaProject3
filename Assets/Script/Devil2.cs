@@ -18,7 +18,7 @@ public class Devil2 : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            gm.InputText.text = ("เจ้าคนไม่มีเพื่อน มาเดินคนเดียว");
+            gm.InputText.text = ("สวัสดี");
             gm.InputTextYes.text = ("[Y] เฉย");
             gm.InputTextNo.text = ("[N] โต้ตอบ");
             if (Input.GetKeyDown("y"))

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
     private Text ScoreText; /*ตัวแสดงผลข้อความในหน้า ui */
-    private Text ScoreS1;
+   /* private Text ScoreS1;*/
     public static int score;
     public static int scoreScene1;
     void Start()
@@ -20,11 +20,15 @@ public class Score : MonoBehaviour
     {
         ScoreText.text = ("Score : " + score);
 
-        if (scoreScene1 > 0)
+        /*if (scoreScene1 > 0)
         {
             ScoreS1.text = ("scoreScene1 : " + score);
 
-        }
-      
+        }*/
+        
+    }
+    void resetScore()
+    {
+        PlayerPrefs.SetInt("Score", 0);
     }
 }
