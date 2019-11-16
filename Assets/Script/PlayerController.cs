@@ -135,7 +135,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void resetScore()
+    private void ResetScore()
     {
         PlayerPrefs.SetInt("Score", 0);
     }

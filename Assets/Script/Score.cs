@@ -18,13 +18,13 @@ public class Score : MonoBehaviour
 
     void Update()
     {
-        if (scoreScene1 == 1)
+        ScoreText.text = ("Score : " + score);
+
+        if (scoreScene1 > 0)
         {
-            ScoreS1.text = ("scorescoreScene1 : " + scoreScene1);
+            ScoreS1.text = ("scoreScene1 : " + score);
 
         }
-
-        ScoreText.text = ("Score : " + score);
-        PlayerPrefs.SetInt("Score", score);
+      
     }
 }

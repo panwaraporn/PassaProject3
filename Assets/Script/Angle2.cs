@@ -51,9 +51,9 @@ public class Angle2 : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            gm.InputText.text = (" ");
-            gm.InputTextYes.text = (" ");
-            gm.InputTextNo.text = (" ");
+            gm.InputText.text = ("55555 ");
+            gm.InputTextYes.text = ("6666 ");
+            gm.InputTextNo.text = ("1111 ");
         }
     }
 }
