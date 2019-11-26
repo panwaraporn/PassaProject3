@@ -11,24 +11,27 @@ public class Score : MonoBehaviour
     public static int scoreScene1;
     void Start()
     {
+
         score = 0; /*ตั้งกำหนดเริ่มต้น*/
         ScoreText = GetComponent<Text>(); /*เก็บ component text */
         scoreScene1 = PlayerPrefs.GetInt("scoreScene1", scoreScene1);
+
     }
 
     void Update()
     {
+     
         ScoreText.text = ("Score : " + score);
-
         /*if (scoreScene1 > 0)
         {
             ScoreS1.text = ("scoreScene1 : " + score);
 
         }*/
-        
+
     }
-    void resetScore()
+    public int GetScore()
     {
-        PlayerPrefs.SetInt("Score", 0);
+        return score;
     }
+
 }
