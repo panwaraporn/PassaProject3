@@ -7,6 +7,7 @@ public class GameMaster : MonoBehaviour
 {
     public int points;
     public int score;
+    public bool isGameOver = false;
 
     public Text scoreText;
     public Text InputText;
@@ -33,6 +34,6 @@ public class GameMaster : MonoBehaviour
     {
         scoreText.text = ("Score : " + score.ToString());
         
-    }
+}
 
 }
