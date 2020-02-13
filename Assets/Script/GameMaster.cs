@@ -16,23 +16,23 @@ public class GameMaster : MonoBehaviour
 
     void Start()
     {
-        if (PlayerPrefs.HasKey("Score"))
+        if (PlayerPrefs.HasKey("คะแนน"))
         {
             if(Application.loadedLevel == 0)
             {
-                PlayerPrefs.DeleteKey("Score");
+                PlayerPrefs.DeleteKey("คะแนน");
                 score = 0;
             }
             else
             {
-                    score = PlayerPrefs.GetInt("Score");
+                    score = PlayerPrefs.GetInt("คะแนน");
             }
         }
     }
      
     void Update()
     {
-        scoreText.text = ("Score : " + score.ToString());
+        scoreText.text = ("คะแนน : " + score.ToString());
         
 }
 
