@@ -6,9 +6,10 @@ public class Spikes : MonoBehaviour
 {
     private PlayerController player;
 
+
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();    
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -21,4 +22,5 @@ public class Spikes : MonoBehaviour
             StartCoroutine(player.Knockback(0.02f, 350, player.transform.position));
         }
     }
+
 }

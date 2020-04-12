@@ -14,7 +14,7 @@ public class Devil : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    /*void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Player"))
         {
@@ -55,5 +55,5 @@ public class Devil : MonoBehaviour
             gm.InputTextYes.text = (" ");
             gm.InputTextNo.text = (" ");
         }
-    }
+    }*/
 }

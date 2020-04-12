@@ -14,7 +14,7 @@ public class Box : MonoBehaviour
         gm = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+   /* void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Player"))
         {
@@ -36,5 +36,5 @@ public class Box : MonoBehaviour
         {
             gm.InputText.text = (" ");
         }
-    }
+    }*/
 }

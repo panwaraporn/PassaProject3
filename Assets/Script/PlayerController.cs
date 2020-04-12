@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    //ตั้งค่าตัวละคร
     public float maxSpeed = 6;
     public float speed = 50f;
     public float jumpPower = 900f;
@@ -15,15 +16,20 @@ public class PlayerController : MonoBehaviour
     public int curHealth;
     public int maxHealth = 5;
 
+    //เรียกใช้ค่าจากunityที่ add ใน component
     private Rigidbody2D rb2d;
     private Animator anim;
     private GameMaster gm;
 
+
+    //เริ่มค่าที่ใช้ 
     void Start()
     {
+
         rb2d = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
 
+        
         curHealth = maxHealth;
 
         gm = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
@@ -63,7 +69,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if(curHealth > maxHealth)
+         if(curHealth > maxHealth)
         {
             curHealth = maxHealth;
         }
@@ -96,7 +102,6 @@ public class PlayerController : MonoBehaviour
         //Restart
         Application.LoadLevel(Application.loadedLevel);
     }
-
     public void Damage(int dmg)
     {
         curHealth -= dmg;
@@ -116,7 +121,8 @@ public class PlayerController : MonoBehaviour
         yield return 0;
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    //ตัวเช็คการชนของตัวละครกับสิ่งของหรือกับcoin 
+   /*void OnTriggerEnter2D(Collider2D col)
     {
         if(col.CompareTag("Coin"))
         {
@@ -124,7 +130,9 @@ public class PlayerController : MonoBehaviour
             gm.score += 1;
         }
 
-        if(col.CompareTag("InputTextYes"))
+
+
+        /*if(col.CompareTag("InputTextYes"))
         {
             gm.score += 1;
         }
@@ -133,6 +141,6 @@ public class PlayerController : MonoBehaviour
         {
             gm.score -= 1;
         }
-    }
+    }*/
 
 }

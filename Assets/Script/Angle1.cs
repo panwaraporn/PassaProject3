@@ -19,8 +19,8 @@ public class Angle1 : MonoBehaviour
         if (col.CompareTag("Player"))
         {
             gm.InputText.text = ("เจ้าน่ารักมากๆเลยนะ");
-            gm.InputTextYes.text = ("[Y] แน่นอน");
-            gm.InputTextNo.text = ("[N] ไม่หรอกนะ");
+            /*gm.InputTextYes.text = ("[Y] แน่นอน");
+            gm.InputTextNo.text = ("[N] ไม่หรอกนะ");*/
             if (Input.GetKeyDown("y"))
             {
                 player.Damage(2);
@@ -52,8 +52,8 @@ public class Angle1 : MonoBehaviour
         if (col.CompareTag("Player"))
         {
             gm.InputText.text = (" ");
-            gm.InputTextYes.text = (" ");
-            gm.InputTextNo.text = (" ");
+            /*gm.InputTextYes.text = (" ");
+            gm.InputTextNo.text = (" ");*/
         }
     }
 }
