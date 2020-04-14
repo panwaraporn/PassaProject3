@@ -34,6 +34,8 @@ public class PlayerController : MonoBehaviour
 
         gm = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
 
+
+
     }
 
     [System.Obsolete]

@@ -6,17 +6,18 @@ using UnityEngine.UI;
 public class GameMaster : MonoBehaviour
 {
 
-    public static int score;
+    public static int nScore;
     public bool isGameOver = false;
 
-    public Text scoreText;
+    public Text ScoreText;
     public Text InputText;
     /*public Text InputTextYes;
     public Text InputTextNo;*/
 
     void Start()
     {
-        score = 0;
+        nScore = 0;
+        
         /*if (PlayerPrefs.HasKey("score"))
         {
             if(Application.loadedLevel == 0)
@@ -30,7 +31,13 @@ public class GameMaster : MonoBehaviour
             }
         }*/
     }
-     
+
+    /*public void UpdateScore(int coinValue)
+    {
+        nScore += coinValue;
+        ScoreText.text = "Score : " + nScore.ToString();
+    }*/
+
     void Update()
     {
         /*scoreText.text = ("score : " + score.ToString());*/
