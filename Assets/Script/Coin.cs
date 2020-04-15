@@ -13,6 +13,7 @@ public class Coin : MonoBehaviour
     {
         rend = GetComponent<Renderer>();
         rend.enabled = true;
+        
     }
 
     // Update is called once per frame

@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class NextScene : MonoBehaviour
 {
-    private int nextSceneToLoad;
+    [SerializeField] int level;
+    PlayerController player;
+    /*private int nextSceneToLoad;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +22,13 @@ public class NextScene : MonoBehaviour
     void Update()
     {
         
+    }*/
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.CompareTag("Player"))
+        {
+            PlayerPrefs.SetInt("PlayerScore", GameMaster.nScore);
+            Application.LoadLevel(level);
+        }
     }
 }
