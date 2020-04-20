@@ -14,13 +14,13 @@ public class Angle1 : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    /*void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Player"))
         {
             gm.InputText.text = ("เจ้าน่ารักมากๆเลยนะ");
             /*gm.InputTextYes.text = ("[Y] แน่นอน");
-            gm.InputTextNo.text = ("[N] ไม่หรอกนะ");*/
+            gm.InputTextNo.text = ("[N] ไม่หรอกนะ");
             if (Input.GetKeyDown("y"))
             {
                 player.Damage(2);
@@ -30,7 +30,7 @@ public class Angle1 : MonoBehaviour
                 player.Damage(1);
             }
         }
-    }
+    }*/
 
     void OnTriggerStay2D(Collider2D col)
     {
@@ -47,13 +47,13 @@ public class Angle1 : MonoBehaviour
         }
     }
 
-    void OnTriggerExit2D(Collider2D col)
+    /*void OnTriggerExit2D(Collider2D col)
     {
         if (col.CompareTag("Player"))
         {
             gm.InputText.text = (" ");
             /*gm.InputTextYes.text = (" ");
-            gm.InputTextNo.text = (" ");*/
+            gm.InputTextNo.text = (" ");
         }
-    }
+    }*/
 }

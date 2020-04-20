@@ -5,26 +5,16 @@ using UnityEngine.UI;
 
 public class GameMaster : MonoBehaviour
 {
-    PlayerController player;
-    public static int nScore;
-    public bool isGameOver = false;
 
-    public Text ScoreText;
+
+    public int points;
+    public Text pointsText;
+
     public Text InputText;
-    /*public Text InputTextYes;
-    public Text InputTextNo;*/
-
-    void Start()
-    {
-        
-        nScore = 0;
-        
-    }
-
+    public Text YesText;
     void Update()
     {
-        
+        pointsText.text = ("คะแนน : " + points);
     }
 
-   
 }

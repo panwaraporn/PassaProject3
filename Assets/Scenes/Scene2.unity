@@ -1117,7 +1117,7 @@ GameObject:
   - component: {fileID: 217796393}
   - component: {fileID: 217796392}
   m_Layer: 0
-  m_Name: ScoreText
+  m_Name: PointsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1175,7 +1175,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'score : 0'
+  m_Text: 'Points : '
 --- !u!222 &217796393
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5536,9 +5536,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bac91789e94fc514e8929f63a93875ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isGameOver: 0
-  ScoreText: {fileID: 217796392}
-  InputText: {fileID: 2011563939}
+  points: 0
+  pointsText: {fileID: 217796392}
+  InputText: {fileID: 0}
+  YesText: {fileID: 0}
 --- !u!4 &1345761023
 Transform:
   m_ObjectHideFlags: 0
@@ -6167,6 +6168,7 @@ MonoBehaviour:
   canDoubleJump: 0
   curHealth: 0
   maxHealth: 5
+  points: 0
 --- !u!1 &1503630906
 GameObject:
   m_ObjectHideFlags: 0
@@ -7163,7 +7165,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670087161}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68667b89baa38904aabb166675e46c48, type: 3}
   m_Name: 
@@ -8412,7 +8414,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2011563938
 RectTransform:
   m_ObjectHideFlags: 0

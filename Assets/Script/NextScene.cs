@@ -7,27 +7,16 @@ public class NextScene : MonoBehaviour
 {
     [SerializeField] int level;
     PlayerController player;
-    /*private int nextSceneToLoad;
-    // Start is called before the first frame update
+
     void Start()
     {
-        nextSceneToLoad = SceneManager.GetActiveScene().buildIndex + 1;
+        player = FindObjectOfType<PlayerController>();
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    
+    void OnTriggerEnter2D(Collider2D col)
     {
-        SceneManager.LoadScene(nextSceneToLoad);
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }*/
-    void OnTriggerEnter2D(Collider2D collider)
-    {
-        if (collider.CompareTag("Player"))
+        if (col.CompareTag("Player"))
         {
-            PlayerPrefs.SetInt("PlayerScore", GameMaster.nScore);
             Application.LoadLevel(level);
         }
     }

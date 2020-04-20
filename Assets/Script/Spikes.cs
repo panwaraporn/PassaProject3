@@ -17,7 +17,7 @@ public class Spikes : MonoBehaviour
         if (col.CompareTag("Player"))
         {
             // player.Damage(จำนวนจะลดตามหัวใจ);
-            player.Damage(5);
+            player.Damage(1);
 
             StartCoroutine(player.Knockback(0.02f, 350, player.transform.position));
         }

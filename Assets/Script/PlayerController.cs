@@ -21,7 +21,8 @@ public class PlayerController : MonoBehaviour
     private Animator anim;
     private GameMaster gm;
 
-
+    public int points;
+    
     //เริ่มค่าที่ใช้ 
     void Start()
     {
@@ -34,7 +35,10 @@ public class PlayerController : MonoBehaviour
 
         gm = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
 
-        
+        if(Application.loadedLevelName == "Scene2")
+        {
+            points = PlayerPrefs.GetInt("playerpoints");
+        }
 
     }
 
@@ -71,7 +75,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-         if(curHealth > maxHealth)
+        if(curHealth > maxHealth)
         {
             curHealth = maxHealth;
         }
@@ -123,26 +127,13 @@ public class PlayerController : MonoBehaviour
         yield return 0;
     }
 
-    //ตัวเช็คการชนของตัวละครกับสิ่งของหรือกับcoin 
-   /*void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.CompareTag("Coin"))
+        if (col.CompareTag("Coin"))
         {
             Destroy(col.gameObject);
-            gm.score += 1;
+            gm.points += 1;
         }
-
-
-
-        /*if(col.CompareTag("InputTextYes"))
-        {
-            gm.score += 1;
-        }
-
-        if (col.CompareTag("InputTextNo"))
-        {
-            gm.score -= 1;
-        }
-    }*/
+    }
 
 }
