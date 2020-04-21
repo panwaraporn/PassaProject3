@@ -18,7 +18,7 @@ public class BoxBlue : MonoBehaviour
         if (col.CompareTag("Player"))
         {
             gm.InputText.text = ("ผัสสะ หมายถึง การสัมผัส หรือกระทบกัน");
-            gm.YesText.text = ("กดปุ่ม Y +1");
+            gm.AText.text = ("กดปุ่ม Y +1");
             if (Input.GetKeyDown("y"))
             {
                 gm.points += 1;
@@ -41,7 +41,7 @@ public class BoxBlue : MonoBehaviour
         if (col.CompareTag("Player"))
         {
             gm.InputText.text = (" ");
-            gm.YesText.text = (" ");
+            gm.AText.text = (" ");
 
         }
     }

@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class Coin : MonoBehaviour
 {
    
-    Renderer rend; //ตัวแปลเสียง
+    /*Renderer rend; //ตัวแปลเสียง
     /*int nScore;
-    // Start is called before the first frame update*/
+    // Start is called before the first frame update
     void Start()
     {
         rend = GetComponent<Renderer>();
@@ -29,5 +29,5 @@ public class Coin : MonoBehaviour
         audio.Play();
         rend.enabled = false;
 
-    }
+    }*/
 }

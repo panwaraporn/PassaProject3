@@ -20,6 +20,7 @@ public class DoorScene1 : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
+            SavePoints();
             Application.LoadLevel(level);
             /*gm.InputText.text = ("กด E เพื่อเข้าประตู");
             if (Input.GetKeyDown("e"))
@@ -38,6 +39,10 @@ public class DoorScene1 : MonoBehaviour
         }
     }
 
+    void SavePoints()
+    {
+        PlayerPrefs.SetInt("Points", gm.points);
+    }
     /*void SaveScore()
     {
         PlayerPrefs.SetInt("Score", gm.score);
