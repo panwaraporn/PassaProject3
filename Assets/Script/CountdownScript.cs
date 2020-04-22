@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CountdownScript : MonoBehaviour
 {
-    public static float timeLeft = 30f;
+    public static float timeLeft = 60f;
     Text showTime;
     Canvas gameOver;
     // Start is called before the first frame update
