@@ -17,9 +17,11 @@ public class QAngelblue3 : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            gm.InputText.text = ("การเกิดจักขุสัมผัส คือการเกิดการกระทบของอวัยวะใด");
-            gm.AText.text = ("ตา");
-            gm.BText.text = ("หู");
+            gm.InputText.text = ("จักขุสัมผัส เกิดจากการกระทบของอายตนะภายในในข้อใด");
+            gm.AText.text = ("ตา" +
+                " (กด A)");
+            gm.BText.text = ("หู" +
+                " (กด B)");
             if (Input.GetKeyDown("a"))
             {
                 gm.points += 1;

@@ -17,7 +17,8 @@ public class BoxBlue : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            gm.InputText.text = ("ผัสสะ หมายถึง การสัมผัส หรือกระทบกัน");
+            gm.InputText.text = ("รูป เสียง กลิ่น รส โผฏฐัพพะ " +
+                "ธรรมารมณ์ รวมเรียกว่า อายตนะภายนอก ๖");
             gm.AText.text = ("กดปุ่ม Y +1");
             if (Input.GetKeyDown("y"))
             {

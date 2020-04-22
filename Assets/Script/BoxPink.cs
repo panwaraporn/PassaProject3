@@ -18,7 +18,7 @@ public class BoxPink : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            gm.InputText.text = ("จักขุสัมผัส (ความกระทบทางตา คือ ตา + รูป + จักขุวิญญาณ)");
+            gm.InputText.text = ("ผัสสะเป็นเหตุให้เกิด เวทนา ได้แก่อารมณ์ที่พอใจ ไม่พอใจ");
             gm.AText.text = ("กดปุ่ม Y +1");
             if (Input.GetKeyDown("y"))
             {

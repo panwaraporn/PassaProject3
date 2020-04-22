@@ -19,7 +19,8 @@ public class BoxGreen : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            gm.InputText.text = ("จักขุสัมผัส หมายถึง การกระทบทางตา");
+            gm.InputText.text = ("ตา หู จมูก ลิ้น กาย ใจ " +
+                "รวมเรียกว่า อายตนะภายใน ๖");
             gm.AText.text = ("กดปุ่ม Y +1");
             if (Input.GetKeyDown("y"))
             {
